@@ -1,4 +1,4 @@
-# My React Practicle Test - madhawa-test
+# My React Practical Test - madhawa-test
 
 movie system
 
