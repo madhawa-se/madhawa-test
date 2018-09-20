@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
-class Movie extends Component {
+const movie=(props) => {
 
-constructor(props) {
-    super(props);
-    this.state = {
+    const state = {
       movies:[
       {
         id:1,year:1999,genre:"Sci-Fi",title:"Matrix",
@@ -15,14 +14,12 @@ constructor(props) {
         description:"Two imprisoned men bond over a number of years"
       }
       ]
-    };
+
   }
 
-  render() {
-    return (
+   return (
       <div>
-
-       {this.state.movies.map(
+       {state.movies.map(
           (movie,index)=>{
             return  <div><h2>{movie.year} - {movie.genre} - {movie.title}</h2><p>{movie.description}</p></div>
            } 
@@ -30,7 +27,6 @@ constructor(props) {
          
       </div>
     );
-  }
 }
 
-export default Movie;
+export default movie;
